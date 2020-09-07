@@ -1,0 +1,8 @@
+namespace Projeto_Para_Exercicios
+{
+    class Pessoas
+    {
+        public string Nome, Nome1;
+        public int Idade, Idade1;
+    }
+}
