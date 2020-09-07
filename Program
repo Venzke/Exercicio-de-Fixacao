@@ -1,0 +1,44 @@
+using System;
+
+namespace Projeto_Para_Exercicios
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Pessoas n, i; // Declarando as variaveis n e i do tipo Pessoas. 
+
+            n = new Pessoas(); // Instanciando a variavel n.
+
+            i = new Pessoas(); // Instaciando a variavel i;
+
+            Console.Write("Insira o nome: ");
+            n.Nome = Console.ReadLine(); //n irá receber o dado e ira guardar na variavel Nome da classe Pessoa.
+
+            Console.Write("Insira a idade: ");
+            i.Idade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine();                                //Instruções
+
+            Console.Write("Insira o nome: ");
+            n.Nome1 = Console.ReadLine();
+
+            Console.Write("Insira a idade: ");
+            i.Idade1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+
+            if (i.Idade > i.Idade1)          //IF cuja condição i.Idade maior que i.Idade1 for verdadeira.
+            {
+                Console.Write("Maria é maior "); //Executa essa instrução
+                Console.WriteLine();
+            }
+            else                             // Caso contrário 
+            {
+                Console.Write("João é maior "); //Executa essa instrução
+                Console.WriteLine();
+            }
+                   
+        }
+    }
+}
